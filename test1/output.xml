@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.7 on win32)" generated="20220912 11:10:11.653" rpa="false" schemaversion="3">
+<suite id="s1" name="ImplicitWaitTests" source="C:\Users\eperes\PycharmProjects\test1\Testcases\ImplicitWaitTests.robot">
+<test id="s1-t1" name="RegisterTest" line="5">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://demowebshop.tricentis.com/register</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220912 11:10:12.034" level="INFO">Opening browser 'chrome' to base url 'https://demowebshop.tricentis.com/register'.</msg>
+<status status="PASS" starttime="20220912 11:10:12.033" endtime="20220912 11:10:14.553"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220912 11:10:14.563" endtime="20220912 11:10:14.712"/>
+</kw>
+<kw name="Get Selenium Implicit Wait" library="SeleniumLibrary">
+<var>${implicittime}</var>
+<doc>Gets the implicit wait value used by Selenium.</doc>
+<msg timestamp="20220912 11:10:14.713" level="INFO">${implicittime} = 0 seconds</msg>
+<status status="PASS" starttime="20220912 11:10:14.713" endtime="20220912 11:10:14.713"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${implicittime}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220912 11:10:14.714" endtime="20220912 11:10:14.715"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>10 seconds</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20220912 11:10:14.715" endtime="20220912 11:10:14.717"/>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<arg>Gender</arg>
+<arg>M</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<msg timestamp="20220912 11:10:14.718" level="INFO">Selecting 'M' from radio button 'Gender'.</msg>
+<status status="PASS" starttime="20220912 11:10:14.718" endtime="20220912 11:10:14.834"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>FirstName</arg>
+<arg>John</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220912 11:10:14.836" level="INFO">Typing text 'John' into text field 'FirstName'.</msg>
+<status status="PASS" starttime="20220912 11:10:14.835" endtime="20220912 11:10:14.994"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>LastName</arg>
+<arg>Joe</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220912 11:10:14.995" level="INFO">Typing text 'Joe' into text field 'LastName'.</msg>
+<status status="PASS" starttime="20220912 11:10:14.995" endtime="20220912 11:10:15.149"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>Email</arg>
+<arg>john@joe.fr</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220912 11:10:15.150" level="INFO">Typing text 'john@joe.fr' into text field 'Email'.</msg>
+<status status="PASS" starttime="20220912 11:10:15.150" endtime="20220912 11:10:15.327"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>Password</arg>
+<arg>JohnJoe</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220912 11:10:15.329" level="INFO">Typing text 'JohnJoe' into text field 'Password'.</msg>
+<status status="PASS" starttime="20220912 11:10:15.328" endtime="20220912 11:10:15.453"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>ConfirmPassword</arg>
+<arg>JohnJoe</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220912 11:10:15.455" level="INFO">Typing text 'JohnJoe' into text field 'ConfirmPassword'.</msg>
+<status status="PASS" starttime="20220912 11:10:15.454" endtime="20220912 11:10:15.582"/>
+</kw>
+<kw name="Get Selenium Implicit Wait" library="SeleniumLibrary">
+<var>${implicittime}</var>
+<doc>Gets the implicit wait value used by Selenium.</doc>
+<msg timestamp="20220912 11:10:15.583" level="INFO">${implicittime} = 10 seconds</msg>
+<status status="PASS" starttime="20220912 11:10:15.583" endtime="20220912 11:10:15.583"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${implicittime}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220912 11:10:15.584" endtime="20220912 11:10:15.585"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220912 11:10:15.585" endtime="20220912 11:10:17.781"/>
+</kw>
+<status status="PASS" starttime="20220912 11:10:12.032" endtime="20220912 11:10:17.783"/>
+</test>
+<status status="PASS" starttime="20220912 11:10:11.656" endtime="20220912 11:10:17.792"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="ImplicitWaitTests">ImplicitWaitTests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
